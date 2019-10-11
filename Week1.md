@@ -32,5 +32,29 @@ We've gone from the fashion dataset where the images were small and focused on t
 Now that we’ve discussed what it’s like to extend to real-world data using the Cats v Dogs dataset from an old Kaggle Data Science challenge, let’s go into a notebook that shows how to do the challenge for yourself! In the next video, you’ll see a screencast of that notebook in action. You’ll then be able to try it for yourself.
 https://colab.sandbox.google.com/github/lmoroney/dlaicourse/blob/master/Course%202%20-%20Part%202%20-%20Lesson%202%20-%20Notebook.ipynb
 
+In the last video you saw a screencast of the notebook that you can use as an example of how to build a classifier for Cats vs Dogs. You saw how, in some cases it didn’t classify one cat correctly, and we asked you to try to figure out how you might fix it for yourself. In the next video, you’ll see one solution to this.
+
+Did you find a solution? Well, of course yours might be different from mine but let me show you what I did in the case of the cat my model thought was a dog. So let's go back to the notebook, and we'll run the code. I'll upload this image to see how it classifies. It's a crop of the cats, and lo and behold, it classifies as a cat. Let's open it, and compare it to the original image, and we'll see that just by cropping I was able to get it to change its classification. There must have been something in the uncropped image that matched features with a dog. Now I thought that was a very interesting experiment, didn't you? Now what do you think the impact of cropping might've had on training? Would that have trained the model to show that this was a cat better than an uncropped image. That's food for thought, and something to explore in the next lesson but first let's go back to the workbook.
+
+Okay, in the previous video you took a look at a notebook that trained a convolutional neural network that classified cats versus dogs. Now let's take a look at how that worked.
+0:10
+Let's return to the notebook and take a look at the code that plots the outputs of the convolutions in max pulling layers. The key to this is understanding the model.layers API, which allows you to find the outputs and iterate through them, creating a visualization model for each one.
+0:28
+We can then load a random image into an array and pass it to the predict method of the visualization model.
+0:35
+The variable to keep an eye on is display_grid which can be constructed from x which is read as a feature map and processed a little for visibility in the central loop.
+0:45
+We'll then render each of the convolutions of the image, plus their pooling, then another convolution, etc.
+0:52
+You can see images such as the dog's nose being highlighted in many of the images on the left.
+0:59
+We can then run it again to get another random image. And while at first glance this appears to be a frog, if you look closely it's a Siamese cat with a dark head and dark paws towards the right of the frame. It's hard to see if any of the convolutions lock down on a feature. Except maybe the synonymous upright tail of the cat, we can see that vertical dark line in a number of the convolutions.
+1:25
+And let's give it one more try. We can see what's clearly a dog, and how the ears of the dog are represented very strongly. Features like this moving through the convolutions and being labeled as doglike could end up being called something like a floppy ear detector.
+
+
+
+
+
 
 
