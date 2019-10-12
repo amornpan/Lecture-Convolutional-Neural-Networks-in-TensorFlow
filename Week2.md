@@ -47,10 +47,10 @@ So for example, if we have a cat and our cats in our training dataset are always
 ```
 
 But with **augmentation**, being able to **rotate** the image, or being able to **skew** the image, or maybe some other **transforms** would be able to effectively generate that data to train off.
-
+![](https://github.com/DayuanTan/AITensorFlowSpecialization/raw/master/img2/cat1.jpg)
 |Original|Augmentation|New images|Better performance|
 |-|-|-|-|
-|![alt_text](https://github.com/DayuanTan/AITensorFlowSpecialization/raw/master/img2/cat1.jpg | width=100)| (crap)--> |<img src="./img2/cat2.jpg" width=100/>|Better performance|
+|![](https://github.com/DayuanTan/AITensorFlowSpecialization/raw/master/img2/cat1.jpg)| (crap)--> |<img src="./img2/cat2.jpg" width=100/>|Better performance|
 ||(rotate)-->|<img src="./img2/cat3.jpg" width=100/>||
 ||
 
