@@ -90,19 +90,40 @@ train_datagen = ImageDataGenerator(
   Shifting, moves the image around inside its frame. Many pictures have the subject centered. So if we train based on those kind of images, we might over-fit for that scenario. These parameters specify, as a proportion of the image size, how much we should randomly move the subject around. So in this case, we might offset it by 20% vertically or horizontally. 
 
 - **shear**:
-
-|Can't recognize|
+Can't recognize
 ![](https://github.com/DayuanTan/AITensorFlowSpecialization/raw/master/img2/shear1.png)
+
+What we have
+![](https://github.com/DayuanTan/AITensorFlowSpecialization/raw/master/img2/shear2.png)
+
+Shear that person by skewing along the x-axis we'll end up in a similiar pose
+![](https://github.com/DayuanTan/AITensorFlowSpecialization/raw/master/img2/shear3.png)
+
 
 - **zoom**:
   
-|Can't recognize|
-![](https://github.com/DayuanTan/AITensorFlowSpecialization/raw/master/img2/shear2.png)
+Can't recognize
+![](https://github.com/DayuanTan/AITensorFlowSpecialization/raw/master/img2/zoom1.png)
+
+What we have
+![](https://github.com/DayuanTan/AITensorFlowSpecialization/raw/master/img2/zoom2.png)
+
+Shear that person by skewing along the x-axis we'll end up in a similiar pose
+![](https://github.com/DayuanTan/AITensorFlowSpecialization/raw/master/img2/zoom3.png)
+
 
 - **horizontal flip**:
   
-|Can't recognize|
-![](https://github.com/DayuanTan/AITensorFlowSpecialization/raw/master/img2/shear3.png)
+Can't recognize
+![](https://github.com/DayuanTan/AITensorFlowSpecialization/raw/master/img2/flip1.png)
+
+What we have
+![](https://github.com/DayuanTan/AITensorFlowSpecialization/raw/master/img2/flip2.png)
+
+Shear that person by skewing along the x-axis we'll end up in a similiar pose
+![](https://github.com/DayuanTan/AITensorFlowSpecialization/raw/master/img2/flip3.png)
+
+
 
 - **fill_mode**: is the strategy used for filling in newly created pixels, which can appear after a rotation or a width/height shift.
 
