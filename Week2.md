@@ -47,12 +47,15 @@ So for example, if we have a cat and our cats in our training dataset are always
 ```
 
 But with **augmentation**, being able to **rotate** the image, or being able to **skew** the image, or maybe some other **transforms** would be able to effectively generate that data to train off.
+
+Original
 ![](https://github.com/DayuanTan/AITensorFlowSpecialization/raw/master/img2/cat1.jpg)
-|Original|Augmentation|New images|Better performance|
-|-|-|-|-|
-|![](https://github.com/DayuanTan/AITensorFlowSpecialization/raw/master/img2/cat1.jpg)| (crap)--> |<img src="./img2/cat2.jpg" width=100/>|Better performance|
-||(rotate)-->|<img src="./img2/cat3.jpg" width=100/>||
-||
+
+Best Performe
+![](https://github.com/DayuanTan/AITensorFlowSpecialization/raw/master/img2/cat2.jpg)
+
+Rotate
+![](https://github.com/DayuanTan/AITensorFlowSpecialization/raw/master/img2/cat3.jpg)
 
 **Issue**:
 - Don't do image augmentation on drive directly, which will overwrite the data.
@@ -88,24 +91,18 @@ train_datagen = ImageDataGenerator(
 
 - **shear**:
 
-|Can't recognize|What we have|Shear that person by skewing歪斜 along the x-axis we'll end up in a similiar pose|
-|-|-|-|
-|<img src="./img2/shear1.png" width=200/>|<img src="./img2/shear2.png" width=200/>|<img src="./img2/shear3.png" width=200/>|
-||
+|Can't recognize|
+![](https://github.com/DayuanTan/AITensorFlowSpecialization/raw/master/img2/shear1.png)
 
 - **zoom**:
   
-|Can't recognize|What we have|Zoom in that training image|
-|-|-|-|
-|<img src="./img2/zoom1.png" width=200/>|<img src="./img2/zoom2.png" width=200/>|<img src="./img2/zoom3.png" width=200/>|
-||
+|Can't recognize|
+![](https://github.com/DayuanTan/AITensorFlowSpecialization/raw/master/img2/shear2.png)
 
 - **horizontal flip**:
   
-|Can't recognize|What we have|If the image were flipped horizontally, then it becomes more structurally similar to the image in test data and we might not over-fit to right arm raisers.|
-|-|-|-|
-|<img src="./img2/flip1.png" width=200/>|<img src="./img2/flip2.png" width=200/>|<img src="./img2/flip3.png" width=200/>|
-||
+|Can't recognize|
+![](https://github.com/DayuanTan/AITensorFlowSpecialization/raw/master/img2/shear3.png)
 
 - **fill_mode**: is the strategy used for filling in newly created pixels, which can appear after a rotation or a width/height shift.
 
