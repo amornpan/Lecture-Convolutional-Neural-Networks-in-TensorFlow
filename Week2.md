@@ -50,7 +50,7 @@ But with **augmentation**, being able to **rotate** the image, or being able to 
 
 |Original|Augmentation|New images|Better performance|
 |-|-|-|-|
-|![](https://github.com/DayuanTan/AITensorFlowSpecialization/raw/master/img2/cat1.jpg | width=100)| (crap)--> |<img src="./img2/cat2.jpg" width=100/>|Better performance|
+|![](https://github.com/DayuanTan/AITensorFlowSpecialization/raw/master/img2/cat1.jpg width="100")| (crap)--> |<img src="./img2/cat2.jpg" width=100/>|Better performance|
 ||(rotate)-->|<img src="./img2/cat3.jpg" width=100/>||
 ||
 
