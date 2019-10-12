@@ -53,6 +53,20 @@ We can then run it again to get another random image. And while at first glance 
 And let's give it one more try. We can see what's clearly a dog, and how the ears of the dog are represented very strongly. Features like this moving through the convolutions and being labeled as doglike could end up being called something like a floppy ear detector.
 
 
+you've now reached the end of week one. Congratulations. What I find really inspiring about this particular week was that what you've just done with the cats versus dogs datasets as a Kaggle data science challenge, not that long ago was really only available to the top view, the best researchers at the best universities. But now, thanks to the explosion in compute power, open datasets such as this one, and things such as TensorFlow, you're actually able to do this by yourself, on your own home computer. I find that really inspiring and really exciting. So thank you and get ready for week two.
+
+
+Exercise 1 - Cats vs. Dogs
+This week you explored a reduced version of the Cats v Dogs dataset and used it to train a convolutional neural network. You saw that it overfit very quickly, despite great results with the training set. One solution to overfitting is to use more data for both training and validation, and that’s this week’s exercise -- to build a classifier using the full Cats v Dogs dataset of 25k images!
+
+Note again that when loading the images, you might get warnings about EXIF data being missing or corrupt. Don't worry about this -- it is missing data in the images, but it's not visual data that will impact the training.
+
+Let's start building a classifier using the full Cats v Dogs dataset of 25k images.
+
+This course uses a third-party tool, Exercise 1 - Cats vs. Dogs, to enhance your learning experience. No personal information will be shared with the tool.
+https://colab.research.google.com/github/lmoroney/dlaicourse/blob/master/Exercises/Exercise%205%20-%20Real%20World%20Scenarios/Exercise%205%20-%20Question.ipynb
+
+
 # Larger Dataset cats & dogs
 
 ## 2.1.1 ConvNet model
