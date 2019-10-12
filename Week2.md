@@ -177,7 +177,7 @@ train_datagen = ImageDataGenerator(
       fill_mode='nearest')
 ```
 
-<img src="./img2/catsdogswithout.png" width=300/><img src="./img2/catsdogswith.png" width=300/>
+![](https://github.com/DayuanTan/AITensorFlowSpecialization/raw/master/img2/catsdogswith.png)
 
 **Left**: We can see from this figure that the **training** reach close to a 100 percent accuracy in a little over 20 epochs. Meanwhile, the **validation** topped out at around **70** percent, and that's **overfitting** clearly been demonstrated. In other words, the neural network was terrific极好的 at finding a correlation between the images and labels of cats versus dogs for the 2,000 images that it was trained on, but once it tried to predict the images that it previously hadn't seen, it was about 70 percent accurate.
 
@@ -196,7 +196,7 @@ train_datagen = ImageDataGenerator(
 
 `Short summary: A broad set of images are needed for bothen training and testing. `
 
-<img src="./img2/horseshuman.png" width=400/>
+![](https://github.com/DayuanTan/AITensorFlowSpecialization/raw/master/img2/horseshuman.png)
 
 Of course, image augmentation isn't the magic bullet to cure overfitting. It really helps to have a massive大量的 diversity of images. 
 
@@ -222,4 +222,4 @@ So bear in mind that you **don't just** need a broad set of images for **trainin
 
 [My Sol code](./)
 
-<img src="./img2/exercise6.png" width=400/>
+![](https://github.com/DayuanTan/AITensorFlowSpecialization/raw/master/img2/exercise6.png)
