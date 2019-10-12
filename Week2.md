@@ -34,6 +34,19 @@ Having clearly seen the impact that augmentation gives to Cats v Dogs, let’s n
 
 Of course, image augmentation isn't the magic bullet to cure overfitting. It really helps to have a massive diversity of images. So for example, if we look at the horses or humans data set and train it for the same epochs, then we can take a look at its behavior. So I'm going to start training and show all 100 epochs. I sped it up a bit to save your time. As you watch, you'll see the test accuracy climbing steadily. At first, the validation accuracy seems to be in step, but then you'll see it varying wildly. What's happening here is that despite the image augmentation, the diversity of images is still too sparse and the validation set may also be poorly designed, namely that the type of image in it is too close to the images in the training set. If you expect the data for yourself you'll see that's the case. For example, the humans are almost always standing up and in the center of the picture, in both the training and validation sets, so augmenting the image will change it to look like something that doesn't look like what's in the validation set. So by the time the training has completed, we can see the same pattern. The training accuracy is trending towards 100 percent, but the validation is fluctuating in the 60s and 70s. Let's plot this, we can see that the training accuracy climbs steadily in the way that we would want, but the validation fluctuated like crazy. So what we can learn from this is that the image augmentation introduces a random element to the training images but if the validation set doesn't have the same randomness, then its results can fluctuate like this. So bear in mind that you don't just need a broad set of images for training, you also need them for testing or the image augmentation won't help you very much.
 
+Exercise 2 - Cats vs. Dogs using augmentation
+Now that you’ve seen Image Augmentation in action, it’s time to go back to the Cats v Dogs full Kaggle Challenge exercise. Last week you built a classifier for Cats v Dogs and trained it for a few epochs. This week I want you to add Augmentation to it, and experiment with different parameters to avoid overfitting. This will likely take a lot of time -- as it requires using the full dataset along with augmentation code to edit the data on-the-fly. So be sure to use the GPU option if you are training with colab. The opportunity here is to try hard to get into State-of-the-Art type classification  with 99% or greater accuracy on training and validation. Experiment with different images it hasn’t before seen, and see if you can get it to correctly classify them! For a particularly challenging image, see if you can get it to classify this one correctly: https://pixabay.com/photos/bed-dog-animals-dogs-pets-relax-1284238/
+
+Lets now build the Cats vs. Dogs classifier using augmentation!
+
+This course uses a third-party tool, Exercise 2 - Cats vs. Dogs using augmentation , to enhance your learning experience. No personal information will be shared with the tool.
+
+Exercise 2 Answer - Cats vs. Dogs using augmentation
+Here is my version of the classifier, what's yours?
+
+This course uses a third-party tool, Exercise 2 Answer - Cats vs. Dogs using augmentation , to enhance your learning experience. No personal information will be shared with the tool.
+https://colab.sandbox.google.com/github/lmoroney/dlaicourse/blob/master/Exercises/Exercise%206%20-%20Cats%20v%20Dogs%20with%20Augmentation/Exercise%206%20-%20Answer.ipynb
+
 # Augmentation: A technique to avoid overfitting
 
 ## 2.2.1 Image augmentation is tool to avoid overfitting
